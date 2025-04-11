@@ -8,9 +8,11 @@ int main()
 
     deque<int> dq = {1,2,3,4,5,6};
 
+    // O(1)
     dq.push_front(12);
     dq.push_front(13);
 
+    // O(1)
     dq.pop_front();
     dq.pop_back();
 
@@ -21,6 +23,7 @@ int main()
 
     cout << endl;
     
+    // O(1)
     cout << dq.front() << endl;
     cout << dq.back() << endl;
 
