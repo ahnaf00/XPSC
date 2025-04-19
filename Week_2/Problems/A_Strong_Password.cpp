@@ -1,6 +1,20 @@
 #include <bits/stdc++.h>
 using namespace std;
 
+char getChangedChar(char x, char y = '\0')
+{
+    for (char i = 'a'; i <= 'z'; i++)
+    {
+        // char ch = 'a'+rand()%26;
+        if(i != x && i != y)
+        {
+            return i;
+        }
+    }
+    
+    return 'a';
+}
+
 int main()
 {
     int tc;
@@ -8,37 +22,44 @@ int main()
 
     while(tc--)
     {
-        string s,s2;
+        string s;
         cin >> s;
-    
-        char prev,next;
-        int pos;
-        for (int i = 0; i < s.size(); i++)
+        bool changed = false;
+
+        if(s.size() == 1)
         {
-            if(s[i+1] >= 'A' && s[i+1] <= 'Z')
+            char ch = getChangedChar(s[0]);
+            s.insert(1,1,ch);
+            cout << s << endl;
+            continue;
+        }
+
+        for (int i = 0; i < s.size()-1; i++)
+        {
+            if(s[i] == s[i+1])
             {
-                next = s[i+1]; 
-            }
-    
-            if(s[i] == next)
-            {
-                pos = i;
-                break;
+                char ch = getChangedChar(s[i],s[i+1]);
+                if(ch!=s[i] && ch != s[i+1])
+                {
+                    s.insert(i+1,1,ch);
+                    cout << s << endl;
+                    changed = true;
+                    break;
+                }
             }
         }
-        
-        char ch = s[pos]++;
-        if(ch >= 'A' && ch <= 'Z')
+
+        if(!changed)
         {
-            s.insert(pos,1,ch);
+            char ch = getChangedChar(s[s.size()-1]);
+            // if(ch == s[s.size()-1])
+            // {
+            //     char ch = getChangedChar(s[s.size()-1]);
+            // }
+            s.push_back(ch);
+            cout << s << endl;
         }
-        
-        cout << s << endl;
-        
-    }
-
-
-    
+    }   
 
     return 0;
 }
