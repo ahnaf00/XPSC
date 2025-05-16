@@ -1,0 +1,7 @@
+variable size sliding window
+
+1) Segment with small sum
+2) number of segments with samll sum
+3) Segments with small spread
+4) Longest substring
+    k unique charavters
