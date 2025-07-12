@@ -1,0 +1,8 @@
+Math and number theory
+
+1. Divisors - O(n), O(roon n)
+2. Primality test
+3. GCD & LCM
+4. Goldbachs conjecture
+5. Modular Arithmetic
+6. Binary Exponentiation
