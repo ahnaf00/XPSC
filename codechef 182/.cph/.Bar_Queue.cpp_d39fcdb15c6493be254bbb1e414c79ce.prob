@@ -1,0 +1,1 @@
+{"name":"Local: Bar_Queue","url":"c:\\Users\\GIGABYTE\\Downloads\\XSPC\\codechef 182\\Bar_Queue.cpp","tests":[{"id":1751905174443,"input":"3\n8\nGBGBBBBG\n7\nBGGGGGG\n4\nGBBG","output":"7\n1\n4"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"c:\\Users\\GIGABYTE\\Downloads\\XSPC\\codechef 182\\Bar_Queue.cpp","group":"local","local":true}
