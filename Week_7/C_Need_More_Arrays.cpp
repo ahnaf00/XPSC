@@ -1,0 +1,32 @@
+#include <bits/stdc++.h>
+using namespace std;
+
+int main()
+{
+    int tc;
+    cin >> tc;
+
+    while (tc--)
+    {
+        int n;
+        cin >> n;
+
+        vector<int> v(n),ans,ans2;
+
+        for (int i = 0; i < n; i++)
+        {
+            cin >> v[i];
+        }
+
+        ans.push_back(v[0]);
+
+        for (int i = 0; i < n; i++)
+        {
+                        
+        }
+
+    }
+    
+
+    return 0;
+}
