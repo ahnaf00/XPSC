@@ -11,16 +11,8 @@ int main()
         int n;
         cin >> n;
 
-        int maxGCD = INT_MIN;
-
-        for (int i = 1; i < n; i++)
-        {
-            maxGCD = max(maxGCD,__gcd(i,i+1));
-        }
-        
-        cout << maxGCD << endl;
+        cout << n/2 << endl;
     }
     
-
     return 0;
 }

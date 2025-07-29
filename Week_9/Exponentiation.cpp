@@ -1,39 +1,37 @@
 #include <bits/stdc++.h>
 using namespace std;
 
-#define ll long long int
 const int MOD = 1e9+7;
 
-ll power(ll a , ll b)
+int power(int a, int b)
 {
-    a %= MOD;
-    ll result = 1;
-    
-    while (b > 0)
+    int ans = 1%MOD;
+    while (b)
     {
-        if (b % 2 == 1)
+        if(b&1)
         {
-            result = (result * a) % MOD;
+            ans = (1LL * ans%MOD * a%MOD) % MOD;
         }
-        a = (a * a) % MOD;
-        b /= 2;
+        a = 1LL * a*a%MOD; 
+        // b>>=1;
+        b/=2;
     }
-
-    return result;
+    return ans;
 }
 
 int main()
 {
     int tc;
     cin >> tc;
-    
+
     while (tc--)
     {
-        ll a, b;
+        int a, b;
         cin >> a >> b;
 
-        cout << power(a, b) << endl;
+        cout << power(a,b) << endl;
     }
     
+
     return 0;
 }
