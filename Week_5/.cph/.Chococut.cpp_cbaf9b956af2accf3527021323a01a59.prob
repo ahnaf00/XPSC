@@ -1,0 +1,1 @@
+{"name":"Local: Chococut","url":"c:\\Users\\GIGABYTE\\Downloads\\XSPC\\Week_5\\Chococut.cpp","tests":[{"id":1753379538813,"input":"5\n3 4 2\n3 4 4\n6 5 28\n9 7 23\n5 5 0","output":"9\n8\n0\n36\n25\n"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"c:\\Users\\GIGABYTE\\Downloads\\XSPC\\Week_5\\Chococut.cpp","group":"local","local":true}
