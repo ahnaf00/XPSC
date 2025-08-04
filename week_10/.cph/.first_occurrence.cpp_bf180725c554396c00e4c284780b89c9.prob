@@ -1,0 +1,1 @@
+{"name":"Local: first_occurrence","url":"c:\\Users\\GIGABYTE\\Downloads\\XSPC\\week_10\\first_occurrence.cpp","tests":[{"id":1754147411987,"input":"10 10\n2 4 6 6 7 8 8 8 9 12\n8","output":"5"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"c:\\Users\\GIGABYTE\\Downloads\\XSPC\\week_10\\first_occurrence.cpp","group":"local","local":true}

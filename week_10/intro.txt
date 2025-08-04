@@ -1,0 +1,4 @@
+1) Binary Search
+2) Maximum index of an array element not greater than the given one
+3) Minimum index of an array element not less than the given one
+4) First and last occurrence
